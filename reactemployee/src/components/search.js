@@ -35,9 +35,47 @@ People.results.forEach(item=>{
         arr.results.push(item)
     }
 })
-console.log(arr)
-console.log(filter)
  setList(arr)
+}
+
+const alphaFirst = ()=>{
+    console.log(listState)
+    let container = []
+    let answer = {results:[]}
+    listState.results.forEach(item=>{
+        container.push(item.name.first)
+    })
+    let alpha = container.sort()
+
+    alpha.forEach(item=>{
+        listState.results.forEach(thing=>{
+            if(item === thing.name.first){
+                answer.results.push(thing)
+            }
+        })
+        setList(answer)
+    })
+
+}
+
+const alphaLast = ()=>{
+
+    let container = []
+    let answer = {results:[]}
+    listState.results.forEach(item=>{
+        container.push(item.name.last)
+    })
+    let alpha = container.sort()
+
+    alpha.forEach(item=>{
+        listState.results.forEach(thing=>{
+            if(item === thing.name.last){
+                answer.results.push(thing)
+            }
+        })
+        setList(answer)
+    })
+
 }
 
     return(<div><Jumbotron>
@@ -56,8 +94,8 @@ console.log(filter)
   <thead>
     <tr>
       <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
+      <th onClick={alphaFirst}>First Name</th>
+      <th onClick={alphaLast}>Last Name</th>
       <th>Email</th>
       <th>Phone</th>
       <th>Picture</th>
