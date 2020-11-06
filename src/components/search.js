@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Table from 'react-bootstrap/Table'
+import Jumbotron from 'react-bootstrap/esm/Jumbotron'
+import Table from 'react-bootstrap/esm/Table'
 import People from '../people.json'
 
 import Employee from './employee'
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/esm/Button'
 import Inputter from './input'
 
 
