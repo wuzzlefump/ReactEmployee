@@ -341,7 +341,7 @@
             "name": {
                 "title": "Mr",
                 "first": "London",
-                "last": "Lopez"
+                "last": "Lopes"
             },
             "location": {
                 "street": {
@@ -361,7 +361,7 @@
                     "description": "Pacific Time (US & Canada)"
                 }
             },
-            "email": "landon.lopez@example.com",
+            "email": "landon.lopes@example.com",
             "login": {
                 "uuid": "c7ffc4da-4dc7-4469-99a5-c73118514197",
                 "username": "sadgorilla554",
